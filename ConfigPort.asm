@@ -6,5 +6,7 @@ MOVF PORTC, 0;
 ADDF PORTC, 1;
 ADDF PORTC, 2;
 MOVWF CONUT;
+BTF CONUT,0; test the first bit, even = 0, odd = 1;
 BSF PORTD, 6;
+BCF PORTD, 6;
 
